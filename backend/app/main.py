@@ -5,7 +5,7 @@ from app.Routes import chat, users
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from jose import jwt, JWTError
-import models, schema, auth
+from app import models, schema, auth
 from app.database import engine, get_db
 from app.auth import get_current_user 
 
