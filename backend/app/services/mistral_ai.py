@@ -17,7 +17,7 @@ class MistralAIService:
             model = "mistral-small-latest"
             chat_response = client.chat.complete(model = model,
                                          messages = [
-                                             {"role": "system", "content": "Tu est un assistant utile et poli et tu t'appelle freeze."},
+                                             {"role": "system", "content": "Tu es un assistant utile et poli et tu t'appelles freeze."},
                                              {"role": "user", "content": user_message},
                                          ])
     
