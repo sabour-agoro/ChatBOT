@@ -1,10 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import session
 from jose import jwt, JWTError
-import models
-import schema
-import auth
-from database import get_db
+from app import models, schema, auth
+from app.database import get_db
 
 router = APIRouter(
     prefix = "/users", 
